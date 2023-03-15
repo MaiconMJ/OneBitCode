@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Formulário de Cadastro</title>
+</head>
+<body>
+  <h3>Cadastro da liga dos astronautas</h3>
+  <form action="">
+    <div>
+      <label for="fname">Nome:</label>
+      <input type='text' id="fname" name="fname"><br><br>
+    </div>
+    <div>
+      <label for='femail'>Email:</label>
+      <input type='email' id="femail" name="femail"> 
+  
+      <label  for="fpassword">- Password: </label>
+      <input type='password' id="fpassword" name="fpassword" required><br><br>
+    </div>
+    
+    <div>
+      <label for="fdate">Data de Dascimento:</label>
+      <input type='date' id="fdate" name="fdate"> 
+      
+      <label for="ffoto">- Foto: </label>
+      <input type="file" id="ffoto" name="ffoto"><br><br>
+    </div>
+    
+    <div>
+    <label for="fnacionalidade">Nacionalidade: </label>
+    <input list="lista" id="fnacionalidade" name="fnacionalidade">
+      <datalist id="lista">
+        <option value="Americano">
+        <option value="Europeu">
+        <option value="Africano">
+        <option value="Asiático">
+      </datalist>
+  
+      <label for="fgenero">- Gênero: </label> 
+      <label for="html">F</label><input type="radio" id="fgenero" name="fgenero" value="F">
+      <label for="html">M</label><input type="radio" id="fgenero" name="fgenero" value="F">     <br><br>
+    </div>
+    
+    <div>
+      <label for="fqualidades">Suas principais qualidades:</label><br>
+
+      <label for="fqualidades">Inteligncia</label>
+      <input type="checkbox" id="fqualidades" name="fqualidades" value="inteligencia">
+
+      <label for="fqualidades">| Resiliência</label>
+      <input type="checkbox" id="fqualidades" name="fqualidades" value="resiliencia">
+
+      <label for="fqualidades">| Preparo físico</label>
+      <input type="checkbox" id="fqualidades" name="fqualidades" value="preparofisico">
+
+      <label for="fqualidades">| Educação</label>
+      <input type="checkbox" id="fqualidades" name="fqualidades" value="educacao"> |<br><br>
+    </div>
+    
+    <div>
+      <textarea rows="10" cols="40" maxlength="500" placeholder="Porque você gostaria de ser um astrounauta?">        </textarea><br><br>
+    </div>
+    <div>
+      <input type="submit" value="Criar">
+    </div>
+  </form>
+</body>
+</html>
+
