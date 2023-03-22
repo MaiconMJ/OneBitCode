@@ -10,7 +10,8 @@
   gap: 0px 15px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
 }
 .item {
   width: 200px;
@@ -21,4 +22,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.item1 {
+  order: 2;
+  align-self: flex-end;
+}
+
+.item2 {
+  /* flex: 1 0 200px flex-grow flex-shrink flex-basis */
+  order: 3;
+}
+
+.item3 {
+  order: 1;
+}
+
+@media (max-width: 390px) {
+  .item2 {
+    flex: 1 0 620px;
+  }
 }
