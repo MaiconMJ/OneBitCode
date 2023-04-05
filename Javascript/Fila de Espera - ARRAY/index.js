@@ -1,24 +1,35 @@
-let pacientes = ['Pedro', 'Tiago', 'João']
-let novoPaciente = []
+let fila = []
+let opcao = ""
 
 do {
-    option = prompt(
-        'Lista de pacientes na fila de espera:\n' +
-        pacientes[0] + '\n' +
-        pacientes[1] + '\n' +
-        pacientes[2] + '\n' +
+  let pacientes = ""
+  for (let i = 0; i < fila.length; i++) {
+    pacientes += (i + 1) + "º - " + fila[i] + "\n"
+  }
 
-        '\n\nSelecione uma opção:\n' +
-        '\n1 - Novo paciente' +
-        '\n2 - Consultar paciente' + 
-        '\n3 - Sair'
-    )
+  opcao = prompt(
+    "Pacientes:\n" + pacientes +
+    "\nEscolha uma ação:\n1 - Novo paciente\n2 - Consultar paciente\n3 - Sair"
+  )
 
-    switch (option) {
-        case '1':
-            novoPaciente = pacientes.push(prompt('Digite o nome do paciente: '))
-            break
-    }
-
-} while (option !== '3');
-
+  switch (opcao) {
+    case "1":
+      const novoPaciente = prompt("Qual é o nome do paciente?")
+      fila.push(novoPaciente)
+      break
+    case "2":
+      const pacienteConsultado = fila.shift()
+      if (!pacienteConsultado) {
+        alert("Não há pacientes na fila!")
+      } else {
+        alert(pacienteConsultado + " foi removido da fila.")
+      }
+      break
+    case "3":
+      alert("Encerrando...")
+      break
+    default:
+      alert("Opção inválida!")
+      break
+  }
+} while (opcao !== "3");
