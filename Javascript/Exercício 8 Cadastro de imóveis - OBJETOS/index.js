@@ -3,12 +3,7 @@ let imoveisCadastrados = []
 
 do {
 
-  let imovel = {}
-  for (let i = 0; i < imoveisCadastrados.length; i++) {
-    imovel += (i + 1) + 'imóveis cadastrados'
-  }
-
-  opcao = prompt("Selecione uma opção:\n\n" +
+  opcao = prompt("Bem-vindo ao Cadastro de Imóveis.\n" + "\nTotal de imóveis: " + imoveisCadastrados.length +"\n\nSelecione uma opção:\n\n" +
   "1. Salvar imóvel\n" + "2. Consultar imóveis cadastrados\n" + 
   "3. Sair")
 
