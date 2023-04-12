@@ -1,22 +1,50 @@
-let opcao = ''
-let imoveisCadastrados = []
+const imoveis = []
+let opcao = ""
 
 do {
-
-  opcao = prompt("Bem-vindo ao Cadastro de Imóveis.\n" + "\nTotal de imóveis: " + imoveisCadastrados.length +"\n\nSelecione uma opção:\n\n" +
-  "1. Salvar imóvel\n" + "2. Consultar imóveis cadastrados\n" + 
-  "3. Sair")
+  opcao = prompt(
+    "Bem-vindo ao Cadastro de Imóveis.\nTotal de imóveis: " + imoveis.length +
+    "\n\nEscolha uma opção:\n1. Novo imóvel\n2. Listar imóveis\n3. Sair"
+  )
 
   switch (opcao) {
-    case '1':
-      let novoImovel = {}
-      novoImovel.nome = prompt('Informe o nome do proprietário:')
-      novoImovel.quartos = prompt('Infome a quantidade de quartos:')
-      novoImovel.banheiros = prompt('Informe a quantidade de banheiros:')
-      novoImovel.garagem = prompt('Possui garagem? Sim/Não')
+    case "1":
+      const imovel = {}
+
+      imovel.proprietario = prompt("Informe o nome do proprietário do imóvel:")
+      imovel.quartos = parseFloat(prompt("Quantos quartos possui o imóvel?"))
+      imovel.banheiros = parseFloat(prompt("Quantos banheiros possui o imóvel?"))
+      imovel.garagem = prompt("O imóvel possui garagem? (Sim/Não)")
+
+      const confirma = confirm(
+        "Salvar este imóvel?\n" +
+        "\nProprietário: " + imovel.proprietario +
+        "\nQuartos: " + imovel.quartos +
+        "\nBanheiros: " + imovel.banheiros +
+        "\nPossui Garagem? " + imovel.garagem
+      )
+
+      if (confirma) {
+        imoveis.push(imovel)
+      }
       break
-    case '2':
+      
+    case "2": 
+    for (let i = 0; i < imoveis.length; i++) {
+      alert(
+        "Imóvel " + (i + 1) +
+        "\nProprietário: " + imoveis[i].proprietario +
+        "\nQuartos: " + imoveis[i].quartos +
+        "\nBanheiros: " + imoveis[i].banheiros +
+        "\nPossui Garagem? " + imoveis[i].garagem
+      )
+    }
+      break
+    case "3":
+      alert("Saindo...")
+      break
+    default:
+      alert("Opção inválida!")
+      break
   }
-
-
-} while (opcao !== "3")
+} while (opcao !== "3");
