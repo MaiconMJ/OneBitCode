@@ -15,7 +15,7 @@ do {
     case '1':
 
       let numero1 = parseFloat(prompt('Digite o valor da base'))
-      let numero2 = parseFloat(prompt('Digire o valor da altura'))
+      let numero2 = parseFloat(prompt('Digite o valor da altura'))
 
       function triangulo(base, altura) {
         const area = (base * altura) / 2
@@ -23,13 +23,24 @@ do {
       }
 
       const resultado = triangulo(numero1, numero2)
+      alert('A área do triangulo é: ' + resultado)
+      console.log(resultado)
+      break
+
+    case '2':
+      numero1 = parseFloat(prompt('Digite o valor da base'))
+      numero2 = parseFloat(prompt('Digite o valor da altura'))
+
+      function retangulo (base, altura) {
+        area = (base * altura)
+        return area
+      }
+
+      resultado = retangulo(numero1, numero2)
       alert('A área do triangulo é :' + resultado)
       console.log(resultado)
       break
 
-
-    case '2':
-      break
     case '3':
       break
     case '4':
