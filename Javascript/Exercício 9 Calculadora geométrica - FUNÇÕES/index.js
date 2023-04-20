@@ -11,7 +11,7 @@ function calcularAreaRetangulo() {
 }
 
 function calcularAreaQuadrado() {
-  const lado = parseFloat(prompt("Informe a área do quadrado:"))
+  const lado = parseFloat(prompt("Informe um dos lados do quadrado:"))
   return lado * lado
 }
 
