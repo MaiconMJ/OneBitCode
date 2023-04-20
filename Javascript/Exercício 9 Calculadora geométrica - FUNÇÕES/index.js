@@ -9,3 +9,8 @@ function calcularAreaRetangulo() {
   const altura = parseFloat(prompt("Informe a altura do retângulo:"))
   return base * altura
 }
+
+function calcularAreaQuadrado() {
+  const lado = parseFloat(prompt("Informe a área do quadrado:"))
+  return lado * lado
+}
