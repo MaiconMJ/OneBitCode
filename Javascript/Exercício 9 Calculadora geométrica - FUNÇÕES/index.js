@@ -26,3 +26,15 @@ function calcularAreaCirculo() {
   const raio = parseFloat(prompt("Informe o raio do círculo:"))
   return (3.14 * raio * raio)
 }
+
+function exibirMenu() {
+  return prompt(
+    "Calculadora Geométrica\n" +
+    "1. Calcular área de triângulo\n" +
+    "2. Calcular área de retângulo\n" +
+    "3. Calcular área de quadrado\n" +
+    "4. Calcular área de trapézio\n" +
+    "5. Calcular área de círculo\n" +
+    "6. Sair\n"
+  )
+}
