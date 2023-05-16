@@ -1,3 +1,7 @@
+function listarVagas() {
+  
+}
+
 function exibirMenu() {
   return prompt(
     'Selecione uma opção: \n' +
@@ -10,3 +14,36 @@ function exibirMenu() {
   )
 }
 
+function executar() {
+  let opcao = ''
+
+  do {
+    opcao = exibirMenu()
+    let resultado
+
+    switch (opcao) {
+      case '':
+        
+    }
+    switch (opcao) {
+      case '':
+
+    }
+    switch (opcao) {
+      case '':
+
+    }
+    switch (opcao) {
+      case '':
+
+    }
+    switch (opcao) {
+      case '':
+
+    }
+    switch (opcao) {
+      case '':
+
+    }
+  } while (opcao !== '6')
+} 
