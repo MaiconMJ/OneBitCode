@@ -19,7 +19,7 @@ function criarVaga() {
   }
 }
 
-function VisualizarVaga() {
+function visualizarVaga() {
   for (let i = 0; i < vagas.length; i++) {
     prompt('Informe o índice da vaga: ')
     alert(
