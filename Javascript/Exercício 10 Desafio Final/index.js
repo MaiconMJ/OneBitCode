@@ -1,10 +1,27 @@
-function listarVagas() {
-  
+const vagas = []
+
+function criarVaga() {
+
+  const vaga = {}
+
+  vaga.nome = prompt("Informe o nome da vaga: ")
+  vaga.descricao = prompt("Descreva a vaga: ")
+  vaga.dataLimite = prompt("Informe a data limite para se candidatar: ")
+
+  const confirma = confirm(
+    "Por favor, confirme se os dados estão corretos:\n" + 
+    "\nNome da vaga: " + vaga.nome + 
+    "\nDescrição: " + vaga.descricao + 
+    "\nData limite: " + vaga.dataLimite)
+
+  if (confirma) {
+    vagas.push(vaga)
+  }
 }
 
 function exibirMenu() {
   return prompt(
-    "Bem-vindo ao Cadastro de Vagas.\nTotal de vagas: " + vagas.length +
+    "Bem-vindo ao Cadastro de Vagas.\nTotal de vagas: " + vagas.lenght +
     'Selecione uma opção: \n' +
     '1. Listar vagas disponíveis\n' +
     '2. Criar um nova vaga\n' +
