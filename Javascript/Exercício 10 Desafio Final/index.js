@@ -4,6 +4,7 @@ function listarVagas() {
 
 function exibirMenu() {
   return prompt(
+    "Bem-vindo ao Cadastro de Vagas.\nTotal de vagas: " + vagas.length +
     'Selecione uma opção: \n' +
     '1. Listar vagas disponíveis\n' +
     '2. Criar um nova vaga\n' +
