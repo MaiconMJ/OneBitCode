@@ -19,17 +19,17 @@ function criarVaga() {
   }
 }
 
-function visualizarVaga() {
-  for (let i = 0; i < vagas.length; i++) {
-    prompt('Informe o índice da vaga: ')
-    alert(
-      'Vaga ' + (i + 1) +
-      '\n' + vagas[i].nome +
-      '\n' + vagas[i].descricao +
-      '\n' + vagas[i].dataLimite
-    )
-  }
-}
+// function visualizarVaga() {
+//   for (let i = 0; i < vagas.length; i++) {
+//     prompt('Informe o índice da vaga: ')
+//     alert(
+//       'Vaga ' + (i + 1) +
+//       '\n' + vagas[i].nome +
+//       '\n' + vagas[i].descricao +
+//       '\n' + vagas[i].dataLimite
+//     )
+//   }
+// }
 
 function exibirMenu() {
   return prompt(
