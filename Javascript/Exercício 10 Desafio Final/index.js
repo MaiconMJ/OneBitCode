@@ -29,7 +29,25 @@ do {
     break
 
     case "2":
+      const novaVaga = {}
       
+      novaVaga.nome = prompt('Digite o nome da vaga: ')
+      novaVaga.descricao = prompt('Descreva a vaga: ')
+      novaVaga.dataLimite = prompt('Digite a data limite para se candidatar: ')
+
+      const confirmacao = confirm(
+        'Nome da vaga: ' + novaVaga.nome +
+        '\nDescrição da vaga: ' + novaVaga.descricao +
+        '\nData limite: ' + novaVaga.dataLimite +
+        '\n\nOs dados estão corretos?'
+      )
+
+      if (confirmacao) {
+        vagas.push(novaVaga)
+        alert('Vaga adicionada com sucesso!')
+      } else {
+        alert('cadastro cancelado')
+      }
 
     break
 
