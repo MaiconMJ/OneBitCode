@@ -22,7 +22,7 @@ do {
         alert(
           'Vaga ' + (i + 1) +
           '\nNome: ' + vagas[i].nome +
-          '\nNúmero de candidatos: ' + vagas.candidatos.length
+          '\nNúmero de candidatos: ' + vagas.candidato.length
           )
       }
       if(vagas.length === 0) {
@@ -67,6 +67,7 @@ do {
 
     case "4":
       
+
       
 
     break
