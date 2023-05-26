@@ -24,9 +24,12 @@ do {
           'Vaga ' + (i + 1) +
           '\nNome: ' + vagas[i].nome +
           '\nNúmero de candidatos: ' + candidatos.length
-
           )
       }
+      if(vagas.length === 0) {
+        alert('Não há vagas cadastradas.')
+      }
+      
     break
 
     case "2":
