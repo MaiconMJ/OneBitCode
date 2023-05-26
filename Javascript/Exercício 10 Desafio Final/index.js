@@ -5,7 +5,7 @@ do {
   opcao = prompt(
     'Bem-vindo ao Cadastro de Vagas.\n\n' + 
     
-    'Total de vagas: \n' + vagas.length +
+    'Total de vagas: ' + vagas.length +
 
     '\nSelecione uma opção: ' +
     '\n1. Listar vagas disponíveis' +
@@ -51,10 +51,13 @@ do {
     break
 
     case "3":
-
+      
     break
 
     case "4":
+      const candidato = {}
+
+      
 
     break
 
