@@ -29,6 +29,14 @@ do {
       if(vagas.length === 0) {
         alert('Não há vagas cadastradas.')
       }
+
+      // const vagasDisponiveis = vagas.map(function (vaga) {
+      //   return (
+      //     vaga.nome,
+      //     vaga.candidatos
+      //   )
+      // })
+      // alert(vagasDisponiveis)
       
     break
 
