@@ -39,8 +39,7 @@ do {
         'Os dados estão corretos?\n' +
         '\nNome da vaga: ' + novaVaga.nome +
         '\nDescrição da vaga: ' + novaVaga.descricao +
-        '\nData limite: ' + novaVaga.dataLimite +
-        
+        '\nData limite: ' + novaVaga.dataLimite 
       )
 
       if (confirmacao) {
@@ -49,7 +48,6 @@ do {
       } else {
         alert('cadastro cancelado')
       }
-
     break
 
     case "3":
