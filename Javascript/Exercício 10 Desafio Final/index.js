@@ -36,10 +36,11 @@ do {
       novaVaga.dataLimite = prompt('Digite a data limite para se candidatar: ')
 
       const confirmacao = confirm(
-        'Nome da vaga: ' + novaVaga.nome +
+        'Os dados estão corretos?\n' +
+        '\nNome da vaga: ' + novaVaga.nome +
         '\nDescrição da vaga: ' + novaVaga.descricao +
         '\nData limite: ' + novaVaga.dataLimite +
-        '\n\nOs dados estão corretos?'
+        
       )
 
       if (confirmacao) {
