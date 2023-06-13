@@ -1,4 +1,4 @@
-function escalarJogador () {
+function escalarJogador() {
 
   const position = document.getElementById("position").value  //Pegando o valor do input e guaradando na variável
   const name = document.getElementById("name").value          //Pegando o valor do input e guaradando na variável
@@ -7,7 +7,7 @@ function escalarJogador () {
   const confirmation = confirm('Escalar ' + name + ' como ' + position + "?") //Confirmação
 
   if (confirmation) {   //Se confirmado...
-    
+
     const jogadoresConvocados = document.getElementById("convocados")  //Ambiente onde serão exibidos os jogadores - ul.
     const jogador = document.createElement('li')  //Criando a li jogador
     jogador.id = "player-" + number
@@ -19,7 +19,6 @@ function escalarJogador () {
     document.getElementById("number").value = ""    //limpando os inputs
 
   }
-
 }
 
 function removerJogador() {
