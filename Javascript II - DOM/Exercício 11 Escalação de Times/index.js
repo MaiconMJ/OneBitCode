@@ -4,7 +4,7 @@ function escalarJogador () {
   const name = document.getElementById("name").value
   const number = document.getElementById('number').value
 
-  const confirmation = cfirm('Escalar ' + name + ' como ' + position + "?")
+  const confirmation = confirm('Escalar ' + name + ' como ' + position + "?")
 
   if (confirmation) {
     
@@ -20,4 +20,16 @@ function escalarJogador () {
 
   }
 
+}
+
+function removePlayer() {
+  const number = document.getElementById("numberToRemove").value
+  const playerToRemove = document.getElementById("player-" + number)
+
+  const confirmation = confirm("Remover o jogador " + playerToRemove.innerText + "?")
+
+  if (confirmation) {
+    document.getElementById("team-list").removeChild(playerToRemove)
+    document.getElementById("numberToRemove").value = ""
+  }
 }
