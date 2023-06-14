@@ -15,8 +15,13 @@ function register(ev) {
 
 const button = document.getElementById('register-button')
 
-button.addEventListener('click', register)
+button.addEventListener('click', register) 
 
 button.addEventListener('mouseover', function (ev) {  //Exemplo de outro tipo de evento: mouseover. \\ Dessa vez a função foi passada diretamente
   console.log(ev)
 })
+
+function removeEvent () {
+  button.removeEventListener('click', register)
+  alert("Evento removido!")
+}
