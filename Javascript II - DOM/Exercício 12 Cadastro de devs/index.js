@@ -1,9 +1,13 @@
+//Create label function
+
 function createLabel (text, htmlFor) {
   const label = document.createElement('label')
   label.htmlFor = htmlFor
   label.innerText = text
   return label
 }
+
+//Create input function
 
 function createInput (id, value, name, type='text', placeholder='') {
   const input = document.createElement('input')
@@ -15,23 +19,27 @@ function createInput (id, value, name, type='text', placeholder='') {
   return input
 }
 
-const addTechBtn = document.getElementById('addTechBtn')
-const form = document.getElementById('devForm')
-const developers = []
-let inputRows = 0
+const addTechBtn = document.getElementById('addTechBtn')  //botão
+const form = document.getElementById('devForm')           //formulário
+const developers = []                                     //array de devs vazio, solicitafo pelo exercício
+let inputRows = 0                                         //linhas de inputs
+
 
 addTechBtn.addEventListener('click', function (ev) {
   const stackIputs = document.getElementById('stackInputs')
 
-  const newRow = document.createElement('li')
+  const newRow = document.createElement('li') 
   const rowIndex = inputRows
   inputRows++
   newRow.id = 'inputRow' + rowIndex
   newRow.className = 'inputRow'
 
+  // Text Inputs
+
   const techNameLabel = createLabel('Nome: ', 'techName-' + rowIndex)
   const techNameInput = createInput('techName-' + rowIndex, null, 'techName')
   
+  // Radio Inputs
 
   const expLabel1 = createLabel('Experiência: ')
   const id1 = 'expRadio-' + rowIndex + '.1'
@@ -44,6 +52,8 @@ addTechBtn.addEventListener('click', function (ev) {
   const expLabel3 = createLabel('Experiência: ')
   const id3 = 'expRadio-' + rowIndex + '.3'
   const expRadioInput3 = createInput(id3, '5+ anos', 'techExp-' + rowIndex, 'radio')
+
+  //Colocando os elementos dentro dos nós pais
  
   newRow.append(techNameLabel, techNameInput)
 
