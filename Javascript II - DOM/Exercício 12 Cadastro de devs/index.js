@@ -23,5 +23,17 @@ let inputRows = 0
 addTechBtn.addEventListener('click', function (ev) {
   const stackIputs = document.getElementById('stackInputs')
 
+  const newRow = document.createElement('li')
+  const rowIndex = inputRows
+  inputRows++
+  newRow.id = 'inputRow' + rowIndex
+  newRow.className = 'inputRow'
+
+  const techNameLabel = createLabel('Nome: ', 'techName-' + rowIndex)
+  const techNameInput = createInput('techName-' + rowIndex, null, 'techName')
+
+  newRow.append(techNameLabel, techNameInput)
+
+  stackIputs.appendChild(newRow)
   
 })
