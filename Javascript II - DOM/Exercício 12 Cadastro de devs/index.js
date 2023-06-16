@@ -41,21 +41,21 @@ addTechBtn.addEventListener('click', function (ev) {
   
   // Radio Inputs
 
-  const expLabel1 = createLabel('Experiência: ')
+  const expLabel = createLabel('Experiência: ')
   const id1 = 'expRadio-' + rowIndex + '.1'
-  const expRadioInput1= createInput(id1, '0-2 anos', 'techExp-' + rowIndex, 'radio')
-
-  const expLabel2 = createLabel('Experiência: ')
+  const expRadio1 = createInput(id1, '0-2 anos', 'techExp-' + rowIndex, 'radio')
+  const expLabel1 = createLabel('0-2 anos', id1)
   const id2 = 'expRadio-' + rowIndex + '.2'
-  const expRadioInput2 = createInput(id2, '3-4 anos', 'techExp-' + rowIndex, 'radio')
-
-  const expLabel3 = createLabel('Experiência: ')
+  const expRadio2 = createInput(id2, '3-4 anos', 'techExp-' + rowIndex, 'radio')
+  const expLabel2 = createLabel('3-4 anos', id2)
   const id3 = 'expRadio-' + rowIndex + '.3'
-  const expRadioInput3 = createInput(id3, '5+ anos', 'techExp-' + rowIndex, 'radio')
+  const expRadio3 = createInput(id3, '5+ anos', 'techExp-' + rowIndex, 'radio')
+  const expLabel3 = createLabel('5+ anos', id3)
+ 
 
   //Colocando os elementos dentro dos nós pais
  
-  newRow.append(techNameLabel, techNameInput)
+  newRow.append(techNameLabel, techNameInput, expLabel, expRadio1, expLabel1, expRadio2, expLabel2, expRadio3, expLabel3)
 
   stackIputs.appendChild(newRow)
   
