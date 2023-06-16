@@ -29,8 +29,8 @@ addTechBtn.addEventListener('click', function (ev) {
   const stackIputs = document.getElementById('stackInputs')
 
   const newRow = document.createElement('li') 
-  const rowIndex = inputRows
-  inputRows++
+  const rowIndex = inputRows            //Index para identificar cada input individualmente; Será passado como o parâmentro name: 'techExp-' + rowIndex
+  inputRows++                           //Será adicionado +1 em cada linha (inputRow) ao rowIndex, para diferenciar um input do outro // Cada inputRow tem sua rowIndex
   newRow.id = 'inputRow' + rowIndex
   newRow.className = 'inputRow'
 
