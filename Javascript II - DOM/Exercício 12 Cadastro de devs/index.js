@@ -52,10 +52,16 @@ addTechBtn.addEventListener('click', function (ev) {
   const expRadio3 = createInput(id3, '5+ anos', 'techExp-' + rowIndex, 'radio')
   const expLabel3 = createLabel('5+ anos', id3)
  
+  const removeRowBtn = document.createElement('button')
+  removeRowBtn.type = 'button'
+  removeRowBtn.innerText = "Remover"
+  removeRowBtn.addEventListener('click', function () {
+    stackIputs.removeChild(newRow)
+  })
 
   //Colocando os elementos dentro dos nós pais
  
-  newRow.append(techNameLabel, techNameInput, expLabel, expRadio1, expLabel1, expRadio2, expLabel2, expRadio3, expLabel3)
+  newRow.append(techNameLabel, techNameInput, expLabel, expRadio1, expLabel1, expRadio2, expLabel2, expRadio3, expLabel3, removeRowBtn)
 
   stackIputs.appendChild(newRow)
   
