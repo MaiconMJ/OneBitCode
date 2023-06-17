@@ -15,3 +15,7 @@ function switchTheme () {
   document.body.classList.toggle('is-dark')
 }
 
+//Adicionando os eventos
+document.getElementById('lightBtn').addEventListener('click', useLightTheme)
+document.getElementById('darkBtn').addEventListener('click', useDarkTheme)
+document.getElementById('switchBtn').addEventListener('click', switchTheme)
