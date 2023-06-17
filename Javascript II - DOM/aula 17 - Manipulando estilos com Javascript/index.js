@@ -10,3 +10,8 @@ function useDarkTheme () {
 }
 
 //Manipulando estilos através das classes utilizadas pelo CSS
+function switchTheme () {
+  document.body.classList.toggle('is-light')
+  document.body.classList.toggle('is-dark')
+}
+
