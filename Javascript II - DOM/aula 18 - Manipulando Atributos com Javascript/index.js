@@ -12,3 +12,6 @@ document.getElementById('type').addEventListener('click', function () {
   //input.setAttribute('type', 'radio') // Outra opção, setando o atributo diretamente // Opção de mão única
 })
 
+document.getElementById('placeholder').addEventListener('click', function () {
+  input.placeholder = 'Digite aqui...'
+})
