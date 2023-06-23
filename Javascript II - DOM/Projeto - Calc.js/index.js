@@ -19,6 +19,13 @@ const resultInput = document.getElementById('result')
 
 const allowedKeys = ["(", ")", "/", "*", "-", "+", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", ".", "%", " "]
 
+document.querySelectorAll('.charKey').forEach(function (charKeyBtn) {    //Habilitando os botões
+  charKeyBtn.addEventListener('click', function() {
+    const value = charKeyBtn.dataset.value                               
+    input.value += value                                                 //atribuindo ao input o value (charKeyBtn.dataset.value)
+    console.log(input.value)
+  })
+})
 
 //Adicionando o evento de quando a tecla é pressionada:
 
@@ -31,7 +38,7 @@ input.addEventListener("keydown", function (ev) {
   if (ev.key === 'Backspace') {                       //verifica se a key pressionada é o Backspace, se sim atribui a ela o método de 
     input.value = input.value.slice(0, -1)            //remover(apagar) slice(0, -1) : a partir do caracter 0, remove o ultimo elemento
   }
-  if (ev.key === 'Enter') {
+  if (ev.key === 'Enter') {                           //Atribui a key Enter a função calculate()
     calculate()
   }
 })
