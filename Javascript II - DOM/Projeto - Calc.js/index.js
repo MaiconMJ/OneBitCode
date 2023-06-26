@@ -19,13 +19,27 @@ const resultInput = document.getElementById('result')
 
 const allowedKeys = ["(", ")", "/", "*", "-", "+", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", ".", "%", " "]
 
-document.querySelectorAll('.charKey').forEach(function (charKeyBtn) {    //Habilitando os botões
+
+
+//Habilitando os botões que aparecem no input
+
+document.querySelectorAll('.charKey').forEach(function (charKeyBtn) {    
   charKeyBtn.addEventListener('click', function() {
-    const value = charKeyBtn.dataset.value                               
+    const value = charKeyBtn.dataset.value//<-este value é o data-value, não precisa colocar tudo por causa do dataset                        
     input.value += value                                                 //atribuindo ao input o value (charKeyBtn.dataset.value)
     console.log(input.value)
   })
 })
+
+
+//Habilitando o botão clear (ele não aparece no input, só serve para apagar)
+
+document.getElementById('clear').addEventListener('click', function() {
+  input.value = ''                       //Atribui um valor vazio ao input
+  input.focus()                          //Faz o cursor focar no input após o botão clear ser acionado
+})
+
+
 
 //Adicionando o evento de quando a tecla é pressionada:
 
@@ -42,6 +56,17 @@ input.addEventListener("keydown", function (ev) {
     calculate()
   }
 })
+
+
+
+//Atribuindo ao botão 'igual' a função 'calcular'
+
+document.getElementById('equal').addEventListener('click', calculate)
+
+
+
+
+//
 
 function calculate () {
   console.log('calculado!')
