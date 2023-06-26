@@ -70,6 +70,17 @@ function calculate () {
  resultInput.value = result
 }
 
+//Função que habilita o botão copy
+
+document.getElementById('copyToClipboard').addEventListener('click', function(ev) {
+  const button = ev.currentTarget
+  if (button.innerText === 'Copy') {
+    button.innerText = 'Copied!'
+    button.classList.add('success')
+    navigator.clipboard.writeText(resultInput.value)
+  }
+})
+
 
 //Função de trocar o tema
 
