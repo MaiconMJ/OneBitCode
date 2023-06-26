@@ -58,16 +58,14 @@ input.addEventListener("keydown", function (ev) {
 })
 
 
-
 //Atribuindo ao botão 'igual' a função 'calcular'
 
 document.getElementById('equal').addEventListener('click', calculate)
 
 
-
-
-//
+//Função de calcular
 
 function calculate () {
-  console.log('calculado!')
+ const result = eval(input.value)
+ resultInput.value = result
 }
