@@ -78,6 +78,9 @@ document.getElementById('copyToClipboard').addEventListener('click', function(ev
     button.innerText = 'Copied!'
     button.classList.add('success')
     navigator.clipboard.writeText(resultInput.value)
+  } else {
+    button.innerText = 'Copy'
+    button.classList.remove('success')
   }
 })
 
