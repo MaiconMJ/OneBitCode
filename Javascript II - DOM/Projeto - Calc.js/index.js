@@ -66,7 +66,7 @@ document.getElementById('equal').addEventListener('click', calculate)
 //Função de calcular
 
 function calculate () {
- resultInput.value = 'ERROR'
+ resultInput.value = 'ERROR'             
  resultInput.classList.add('error')
  const result = eval(input.value)
  resultInput.value = result
