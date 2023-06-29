@@ -28,6 +28,5 @@ document.querySelectorAll('.gameBtn').forEach(function (gameButton) {
     } else if (main.dataset.player === 'player2' && gameButton.innerText === '') {
       gameButton.innerText = 'O'
     }
-
   })
 })
