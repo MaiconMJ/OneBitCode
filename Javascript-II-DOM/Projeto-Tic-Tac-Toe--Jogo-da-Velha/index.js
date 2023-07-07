@@ -2,6 +2,7 @@ const main = document.querySelector('main')
 const root = document.querySelector(':root')     
 const input1 = document.getElementById('name').value
 const input2 = document.getElementById('name2').value
+const dashboard = document.getElementById('game-result')
 
 
 document.getElementById('switchPlayer').addEventListener('click', function () {
@@ -30,3 +31,9 @@ document.querySelectorAll('.gameBtn').forEach(function (gameButton) {
     }
   })
 })
+
+const playerOne = document.createElement('h1')
+playerOne.textContent = 'Teste'
+
+dashboard.appendChild(playerOne)
+
