@@ -3,6 +3,15 @@ const root = document.querySelector(':root')
 const input1 = document.getElementById('player1Input').value
 const input2 = document.getElementById('player2Input').value
 const dashboard = document.getElementById('game-result')
+let turnPlayer = ''
+
+function updateTitle () {
+  const playerInput = document.getElementById('turnPlayer')
+  document.getElementById('turnPlayer').innerText = playerInput.value
+}
+
+
+
 
 
 document.getElementById('switchPlayer').addEventListener('click', function () {
