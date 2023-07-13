@@ -18,17 +18,17 @@ function initializeGame () {
 document.getElementById('start').addEventListener('click', initializeGame)
 
 
-document.getElementById('switchPlayer').addEventListener('click', function () {
-  if (section.dataset.player === 'player1') {                          
-    root.style.setProperty('--primary-color', '#914dff')
-    section.dataset.player = 'player2'
-  } else {
-    root.style.setProperty('--primary-color', '#4d62ff')
-    section.dataset.player = 'player1'
-  }                    
+// document.getElementById('switchPlayer').addEventListener('click', function () {
+//   if (section.dataset.player === 'player1') {                          
+//     root.style.setProperty('--primary-color', '#914dff')
+//     section.dataset.player = 'player2'
+//   } else {
+//     root.style.setProperty('--primary-color', '#4d62ff')
+//     section.dataset.player = 'player1'
+//   }                    
   
   
-})
+// })
 
 
 document.querySelectorAll('.cursor-pointer').forEach(function (element) {
