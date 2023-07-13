@@ -14,15 +14,16 @@
     <h1>Tic Tac Toe #</h1>
 
     <label for="player1">X</label>
-    <input type="text" id="player1">
+    <input type="text" id="player1Input">
 
     <label for="player2">O</label>
-    <input type="text" id="player2">
+    <input type="text" id="player2Input">
 
     <button id="start">Começar!</button>
     <button id="switchPlayer">Switch Player</button>
   </header>
   <hr>
+  <h2>Vez de: <span id="turnPlayer"></span></h2>
   <section data-player="player1">
     <div id="gameBoard">
       <span class="cursor-pointer" data-region="0.0"></span>
@@ -37,9 +38,7 @@
     </div>
 
   </section>
-  <footer id="game-result">
-
-  </footer>
+  <footer id="game-result"></footer>
 </body>
 
 </html>

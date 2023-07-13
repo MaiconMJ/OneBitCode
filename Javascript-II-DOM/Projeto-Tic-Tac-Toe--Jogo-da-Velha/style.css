@@ -32,7 +32,7 @@ header {
   color: var(--font-color);
 }
 
-#player1, #player2  {
+#player1Input, #player2Input  {
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
   border-radius: .5rem;
