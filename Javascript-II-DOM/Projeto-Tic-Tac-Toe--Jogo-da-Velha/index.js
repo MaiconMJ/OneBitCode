@@ -25,7 +25,9 @@ document.getElementById('switchPlayer').addEventListener('click', function () {
   } else {
     root.style.setProperty('--primary-color', '#4d62ff')
     section.dataset.player = 'player1'
-  }                                                   
+  }                    
+  
+  
 })
 
 
