@@ -30,14 +30,12 @@ document.getElementById('start').addEventListener('click', initializeGame)
   
 // })
 
-
 document.querySelectorAll('.cursor-pointer').forEach(function (element) {
   element.addEventListener('click', function () {
-    if (section.dataset.player === 'player1' && element.innerText === '') {
+    if (turnPlayer === 'player1' && element.innerText === '') {
       element.innerText = 'X'
-    } else if (section.dataset.player === 'player2' && element.innerText === '') {
+    } else if (turnPlayer === 'player2' && element.innerText === '') {
       element.innerText = 'O'
     }element
   })
 })
-
