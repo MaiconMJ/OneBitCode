@@ -31,7 +31,7 @@ header {
   color: var(--font-color);
 }
 
-#name, #name2  {
+#player1, #player2  {
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
   border-radius: .5rem;
@@ -57,7 +57,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 2rem 0;
   height: 64vh;
-  
+
 }
 
 button {
@@ -66,10 +66,12 @@ button {
   padding: .5rem 1rem;
   transition: .15s;
   border: solid #212529;
+  
 }
 
 .gameBtn {
   font-size: 100px;
+  
 }
 
 .gameBtn:hover {

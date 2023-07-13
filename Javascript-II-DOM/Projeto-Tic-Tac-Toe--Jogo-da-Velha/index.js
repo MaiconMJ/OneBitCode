@@ -1,7 +1,7 @@
 const main = document.querySelector('main') 
 const root = document.querySelector(':root')     
-const input1 = document.getElementById('name').value
-const input2 = document.getElementById('name2').value
+const input1 = document.getElementById('player1').value
+const input2 = document.getElementById('player2').value
 const dashboard = document.getElementById('game-result')
 
 
