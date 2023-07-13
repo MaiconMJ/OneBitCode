@@ -32,7 +32,7 @@ header {
   color: var(--font-color);
 }
 
-#player1Input, #player2Input  {
+#player1, #player2  {
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
   border-radius: .5rem;
@@ -42,6 +42,16 @@ header {
   padding: .1rem;
   text-align: center;
   width: 20%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+#turnPlayer {
+  margin-left: .5rem;
 }
 
 section {
