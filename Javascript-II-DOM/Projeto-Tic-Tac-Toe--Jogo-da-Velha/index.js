@@ -12,8 +12,15 @@ function initializeGame () {
   turnPlayer = 'player1'
   document.querySelector('h2').innerHTML = 'Vez de: <span id="turnPlayer"></span>'
   updateTitle()
-  
+
+  boardRegion.forEach(function (element) {
+    element.classList.remove('win')
+    element.innerText = ''
+    element.classList.add('cursor-pointer')
+    element.addEventListener('click', handleBoardClick)
+  })
 }
+
 
 document.getElementById('start').addEventListener('click', initializeGame)
 
