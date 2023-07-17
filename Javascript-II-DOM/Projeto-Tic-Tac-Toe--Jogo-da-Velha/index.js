@@ -53,6 +53,14 @@ function disableRegion(element) {
 }
 
 // Pinta as regiões onde o jogador venceu e mostra seu nome na tela
+function handleWin(regions) {
+  regions.forEach(function (region) {
+    document.querySelector('[data-region="' + region + '"]').classList.add('win')
+  })
+  const playerName = document.getElementById(turnPlayer).value
+  document.querySelector('h2').innerHTML = playerName + ' venceu!'
+}
+
 function handleBoardClick(ev) {
   // Obtém os índices da região clicada
   const span = ev.currentTarget
