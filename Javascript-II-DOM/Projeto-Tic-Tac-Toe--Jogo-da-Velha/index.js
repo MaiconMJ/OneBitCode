@@ -21,6 +21,14 @@ function initializeGame () {
   })
 }
 
+function handleBoardClick(ev) {
+  const span = ev.currentTarget
+  if (turnPlayer === 'player1') {
+    span.innerText = 'X'
+  } else {
+    span.innerText = 'O'
+  }
+}
 
 document.getElementById('start').addEventListener('click', initializeGame)
 
@@ -37,12 +45,12 @@ document.getElementById('start').addEventListener('click', initializeGame)
   
 // })
 
-document.querySelectorAll('.cursor-pointer').forEach(function (element) {
-  element.addEventListener('click', function () {
-    if (turnPlayer === 'player1' && element.innerText === '') {
-      element.innerText = 'X'
-    } else if (turnPlayer === 'player2' && element.innerText === '') {
-      element.innerText = 'O'
-    }element
-  })
-})
+// document.querySelectorAll('.cursor-pointer').forEach(function (element) {
+//   element.addEventListener('click', function () {
+//     if (turnPlayer === 'player1' && element.innerText === '') {
+//       element.innerText = 'X'
+//     } else if (turnPlayer === 'player2' && element.innerText === '') {
+//       element.innerText = 'O'
+//     }element
+//   })
+// })
