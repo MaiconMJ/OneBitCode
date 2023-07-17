@@ -19,6 +19,44 @@ function initializeGame () {
     element.classList.add('cursor-pointer')
     element.addEventListener('click', handleBoardClick)
   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 function handleBoardClick(ev) {
