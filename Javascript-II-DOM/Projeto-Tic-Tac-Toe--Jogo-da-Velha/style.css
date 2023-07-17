@@ -64,16 +64,6 @@ section {
 
 }
 
-/* #gameBoard {
-  background-color: #232323;
-  display: grid;
-  grid-template-columns: 6rem 6rem 6rem;
-  grid-template-rows: 6rem 6rem 6rem;
-  gap: .5rem;
-  margin-bottom: 1.5rem;
-  max-width: 19rem;
-} */
-
 #gameBoard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -82,20 +72,12 @@ section {
   gap: .5rem;
 }
 
-/* #gameBoard span {
-  font-weight: 700;
-  padding: .5rem 1rem;
-  transition: .15s;
-  
-} */
-
 #gameBoard span {
   background-color: var(--primary-color);
   display: grid;
   place-content: center;
   font-size: 5rem;
 }
-
 
 #gameBoard span.win {
   background-color: #39e85f;
