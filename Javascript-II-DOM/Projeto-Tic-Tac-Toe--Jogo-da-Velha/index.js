@@ -45,3 +45,9 @@ function getWinRegions() {
     winRegions.push("0.2", "1.1", "2.0")
   return winRegions
 }
+
+// Desabilita uma região do tabuleiro para que não seja mais clicável
+function disableRegion(element) {
+  element.classList.remove('cursor-pointer')
+  element.removeEventListener('click', handleBoardClick)
+}
