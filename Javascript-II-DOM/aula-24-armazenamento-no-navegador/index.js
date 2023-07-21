@@ -18,3 +18,8 @@ document.getElementById('local').addEventListener('click', function () {
   localStorage.setItem('nomeDaChave', input.value)
   input.value = ''
 })
+
+document.getElementById('readLocal').addEventListener('click', function () {
+  const info = localStorage.getItem('nomeDaChave')
+  alert('A informação salva é: ' + info)
+})
