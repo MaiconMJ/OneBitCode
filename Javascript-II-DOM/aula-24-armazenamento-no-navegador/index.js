@@ -36,3 +36,16 @@ document.getElementById('cookieBtn').addEventListener('click', function () {
   input.value = ''
   console.log(document.cookie)
 })
+
+// Outro exemplo utilizando os cookies
+
+document.getElementById('cookie2Btn').addEventListener('click', function () {
+  const input = document.getElementById('cookie2')
+  // cookieName=value; expires=UTCStringDate; path=/;
+  const cookie = 'text=' + input.value + ';'
+  const expiration = 'expires=' + new Date(2023, 8, 9) + ';'
+  const path = 'path=/;'
+  document.cookie = cookie + expiration + path
+  input.value = ''
+  console.log(document.cookie)
+})
