@@ -23,3 +23,16 @@ document.getElementById('readLocal').addEventListener('click', function () {
   const info = localStorage.getItem('nomeDaChave')
   alert('A informação salva é: ' + info)
 })
+
+// Usando os cookies
+
+document.getElementById('cookieBtn').addEventListener('click', function () {
+  const input = document.getElementById('cookie')
+  // cookieName=value; expires=UTCstringData; path=/;
+  const cookie = 'info=' + input.value + ';'
+  const expiration = 'expires=' + new Date(2023, 9, 9) + ';'
+  const path = 'path=/;'
+  document.cookie = cookie + expiration + path
+  input.value = ''
+  console.log(document.cookie)
+})
